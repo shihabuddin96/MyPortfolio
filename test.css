@@ -1,0 +1,167 @@
+/* Services Section  CSS */
+
+.works {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;    
+}
+
+.works h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.works__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.works__card, .works__card__mid {
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%
+        ),
+        url('images/university.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+
+
+
+
+    
+}
+
+.works__card:nth-child(3) {
+    list-style-type: none;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%
+        ),
+        url('images/present.jpg');
+}
+
+.works__card__mid {
+    list-style-type: none;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%, 
+        rgba(17,17,17,0.6) 100%
+        ),
+        url('images/accountant.jpg');
+    
+}
+
+.works h2 {
+    position: absolute;
+    opacity: 1;
+    margin: 0 auto;
+    top:20px; 
+    left: 30px; 
+}
+
+.works__card__mid p {
+    position: absolute;
+    opacity: 1;
+    top: 90px;
+    left: 30px;
+    right: 20px;
+}
+.works__card p {
+    position: absolute;
+    opacity: 1;
+    top: 60px;
+    left: 30px;
+    right: 20px;
+}
+
+.works__card li {
+    position: relative;
+    top: 80px;
+    left: 50px;
+    margin: 10px;
+}
+
+.works__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.works__card:hover, .works__card__mid:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.works__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 50%;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+}
+
+.project__btn:hover {
+    background: #4837ff;
+    transition: all 0.3s ease;
+    color: chartreuse;
+}
+
+@media screen and (max-width: 768px) {
+    .works {
+        height: 1600px;
+    }
+
+    .works h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .works {
+        height: 1400px;
+    }
+
+    .works h1 {
+        font-size: 1.2rem;
+    }
+
+    .works__card {
+        width: 300px;
+    }
+}
